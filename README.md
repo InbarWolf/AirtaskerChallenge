@@ -1,7 +1,7 @@
 # Airtasker challenge
 
 ### I've created a web API that returns a Chuck Norris random joke on every API request.
-### For my hosted solution, the user is allowed to do 5 calls per 20 secnonds[Link](http://airtaskerchallengeratelimiter-wolfenfeld.us-east-2.elasticbeanstalk.com/)
+### For my hosted solution, the user is allowed to do 5 calls per 20 secnonds -> [Link](http://airtaskerchallengeratelimiter-wolfenfeld.us-east-2.elasticbeanstalk.com/)
 
 In order to keep track of all the requests, I implemented a middleware called **RateLimitHandler**.
 The middleware is registered in the pipeline to be called before reaching the requested route. 
