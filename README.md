@@ -1,17 +1,8 @@
 # Airtasker challenge
 
-The task is to produce a rate-limiting module that stops a particular requestor from making too many http requests within a particular period of time.
-
-The module should expose a method that keeps track of requests and limits it such that a requester can only make 100 requests per hour. After the limit has been reached, return a 429 with the text "Rate limit exceeded. Try again in #{n} seconds".
-
-Although you are only required to implement the strategy described above, it should be easy to extend the rate limiting module to take on different rate-limiting strategies.
-
-How you do this is up to you. Think about how easy your rate limiter will be to maintain and control. Write what you consider to be production-quality code, with comments and tests if and when you consider them necessary.
-
-## About The code
-I've created a web API that returns a Chuck Norris random joke on every API request.
-For my hosted solution, the user is allowed to do 5 calls per hour.
-[Link](http://airtaskerchallengeratelimiter-wolfenfeld.us-east-2.elasticbeanstalk.com/)
+##I've created a web API that returns a Chuck Norris random joke on every API request.
+##For my hosted solution, the user is allowed to do 5 calls per hour.
+##[Link](http://airtaskerchallengeratelimiter-wolfenfeld.us-east-2.elasticbeanstalk.com/)
 
 In order to keep track of all the requests, I implemented a middleware called **RateLimitHandler**.
 The middleware is registered in the pipeline to be called before reaching the requested route. 
