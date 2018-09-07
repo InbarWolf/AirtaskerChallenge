@@ -15,7 +15,7 @@ namespace AirtaskerChallengeRateLimiter.Tests
 	{
 		HttpClient client;
 		string localURI = "http://localhost:29792/";
-		int rateLimit = 5;
+		int rateLimit = 100;
 		TimeSpan timeLimit = TimeSpan.FromSeconds(20);
 
 
